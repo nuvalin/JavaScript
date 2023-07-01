@@ -1,0 +1,51 @@
+<!-- project 9
+  -->
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="output">
+        <h1>Hello</h1>
+        <div>Test</div>
+        <ul>
+            <li id="one">One</li>
+            <li class="red">Two</li>
+        </ul>
+        <div>Test</div>
+    </div>
+    <Script>const op = document.querySelector("output");
+        const mainList = document.querySelector("ul");
+        mainList.id = "mainList";
+        const divTags = document.querySelectorAll("div");
+        console.log(divTags);
+        for (var i = 0; i < divTags.length; i++) {
+            divTags[i].id = "id" + (i + 1);
+            if (i % 2) {
+                divTags[i].style.color = "red"
+            } else {
+                divTags[i].style.color = "blue"
+            }
+        }
+
+    </Script>
+
+</body>
+
+</html>
+
+<!-- <!doctype html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <h1>Test</h1>
+    <script>
+        const op = document.querySelector('h1');
+        op.textContent = "Hello World";
+    </script>
+</body>
+
+</html>  -->
